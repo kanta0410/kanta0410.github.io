@@ -1,6 +1,6 @@
 # ハサカン / Hasakan
 
-AI 研究者・AI コンサルの個人サイト。公開先: https://kanta0410.github.io/
+趣味で AI 研究をしている人の個人サイト。公開先: https://kanta0410.github.io/
 
 - `index.html` — サイト本体(1枚。CSS と JS も中に書いてある)
 - `brief.md` — 中身の指示書
