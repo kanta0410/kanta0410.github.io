@@ -9,7 +9,7 @@
 - GitHub: https://github.com/kanta0410
 - note: https://note.com/kanta_st0140
 - X: https://x.com/coco0140_st
-- YouTube: 「最近の発見」として1本を埋め込む → https://www.youtube.com/shorts/h0HrmxWqxwc(埋め込みは https://www.youtube.com/embed/h0HrmxWqxwc 、縦長 9:16)
+- YouTube: 「最近の事件」として1本(ハサカン事件簿 第6話)を埋め込む → https://www.youtube.com/shorts/h0HrmxWqxwc(埋め込みは https://www.youtube.com/embed/h0HrmxWqxwc 、縦長 9:16)
 - Instagram は載せない。
 
 ## AI コンサル(初回の相談は無料)
