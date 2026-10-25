@@ -17,12 +17,12 @@
             --text: #e4e4ec;
             --text-dim: #9498a8;
             --text-faint: #505464;
-            --green: #00e07f;
-            --green-dim: rgba(0, 224, 127, 0.14);
-            --green-glow: rgba(0, 224, 127, 0.25);
-            --orange: #ff6a3d;
-            --orange-dim: rgba(255, 106, 61, 0.12);
-            --orange-glow: rgba(255, 106, 61, 0.3);
+            --green: #ff3b47;
+            --green-dim: rgba(255, 59, 71, 0.14);
+            --green-glow: rgba(255, 59, 71, 0.25);
+            --orange: #ffb547;
+            --orange-dim: rgba(255, 181, 71, 0.12);
+            --orange-glow: rgba(255, 181, 71, 0.3);
             --blue: #5b8def;
             --blue-dim: rgba(91, 141, 239, 0.12);
             --border: rgba(255, 255, 255, 0.06);
@@ -292,8 +292,8 @@
             overflow: hidden;
             padding: calc(var(--nav-h) + 3rem) 5vw 4rem;
             background:
-                radial-gradient(ellipse 50% 40% at 70% 30%, rgba(0, 224, 127, 0.04) 0%, transparent 70%),
-                radial-gradient(ellipse 40% 50% at 20% 60%, rgba(255, 106, 61, 0.03) 0%, transparent 60%),
+                radial-gradient(ellipse 50% 40% at 70% 30%, rgba(255, 59, 71, 0.04) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 50% at 20% 60%, rgba(255, 181, 71, 0.03) 0%, transparent 60%),
                 var(--bg);
         }
         .hero::before {
@@ -708,7 +708,7 @@
             right: 0;
             width: 40%;
             height: 100%;
-            background: linear-gradient(180deg, transparent 0%, rgba(0, 224, 127, 0.02) 50%, transparent 100%);
+            background: linear-gradient(180deg, transparent 0%, rgba(255, 59, 71, 0.02) 50%, transparent 100%);
             pointer-events: none;
         }
         .video-inner {
@@ -725,7 +725,7 @@
             border-radius: var(--radius-lg);
             overflow: hidden;
             border: 1px solid var(--border-strong);
-            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55), 0 0 70px rgba(0, 224, 127, 0.06);
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55), 0 0 70px rgba(255, 59, 71, 0.06);
             max-width: 320px;
             margin: 0 auto;
             aspect-ratio: 9/16;
@@ -745,7 +745,7 @@
             font-size: 0.65rem;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            background: radial-gradient(ellipse at center, rgba(0, 224, 127, 0.04) 0%, transparent 70%),
+            background: radial-gradient(ellipse at center, rgba(255, 59, 71, 0.04) 0%, transparent 70%),
                 #000;
             z-index: 1;
         }
@@ -753,7 +753,7 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background: rgba(0, 224, 127, 0.15);
+            background: rgba(255, 59, 71, 0.15);
             border: 2px solid var(--green);
             display: flex;
             align-items: center;
@@ -770,7 +770,7 @@
             margin-left: 3px;
         }
         .video-frame-wrapper:hover .play-btn {
-            background: rgba(0, 224, 127, 0.25);
+            background: rgba(255, 59, 71, 0.25);
             box-shadow: 0 0 30px var(--green-glow);
             transform: scale(1.05);
         }
@@ -835,8 +835,8 @@
             display: inline-block;
             margin-top: 1.25rem;
             padding: 0.4rem 1.1rem;
-            background: rgba(0, 224, 127, 0.08);
-            border: 1px solid rgba(0, 224, 127, 0.25);
+            background: rgba(255, 59, 71, 0.08);
+            border: 1px solid rgba(255, 59, 71, 0.25);
             border-radius: 50px;
             font-family: var(--font-mono);
             font-size: 0.6rem;
@@ -859,7 +859,7 @@
             gap: 0.5rem;
             padding: 0.55rem 1.2rem;
             background: var(--green-dim);
-            border: 1px solid rgba(0, 224, 127, 0.3);
+            border: 1px solid rgba(255, 59, 71, 0.3);
             border-radius: 50px;
             font-size: 0.7rem;
             font-weight: 600;
@@ -954,8 +954,8 @@
             font-weight: 500;
         }
         .consulting-row.featured {
-            background: linear-gradient(135deg, rgba(0, 224, 127, 0.05) 0%, transparent 50%), var(--bg-card);
-            border-color: rgba(0, 224, 127, 0.22);
+            background: linear-gradient(135deg, rgba(255, 59, 71, 0.05) 0%, transparent 50%), var(--bg-card);
+            border-color: rgba(255, 59, 71, 0.22);
         }
 
         /* Contact */
@@ -1000,13 +1000,13 @@
             border-radius: 50px;
             text-decoration: none;
             transition: all var(--transition);
-            box-shadow: 0 4px 18px rgba(0, 224, 127, 0.3);
+            box-shadow: 0 4px 18px rgba(255, 59, 71, 0.3);
             font-family: var(--font-body);
         }
         .booking-card .btn-book:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(0, 224, 127, 0.45);
-            background: #00f08a;
+            box-shadow: 0 8px 32px rgba(255, 59, 71, 0.45);
+            background: #ff5a64;
         }
         .booking-card .btn-book:active {
             transform: translateY(0);
@@ -1062,6 +1062,60 @@
         }
 
         /* Footer */
+
+        .paper-card {
+            margin-top: 2.5rem;
+            padding: 2rem 2.25rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--green);
+            border-radius: var(--radius);
+            max-width: 920px;
+        }
+        .paper-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem 1.2rem;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-faint);
+            margin-bottom: 1rem;
+        }
+        .paper-tag { color: var(--green); }
+        .paper-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+            font-weight: 600;
+            line-height: 1.45;
+            margin-bottom: 1rem;
+        }
+        .paper-jp { color: var(--text-dim); font-size: 0.95rem; }
+        .paper-next {
+            margin-top: 0.9rem;
+            font-family: var(--font-hand-jp);
+            color: var(--orange);
+            font-size: 0.95rem;
+        }
+        .paper-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.75rem 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .paper-links a {
+            color: var(--text);
+            text-decoration: none;
+            border-bottom: 1px solid var(--green);
+            padding-bottom: 2px;
+            font-size: 0.9rem;
+        }
+        .paper-links a:hover { color: var(--green); }
+        .paper-doi { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-faint); word-break: break-all; }
+        @media (max-width: 640px) {
+            .paper-card { padding: 1.4rem 1.2rem; }
+        }
+
         .footer {
             padding: 1.6rem 5vw;
             border-top: 1px solid var(--border);
@@ -1257,8 +1311,9 @@
         </a>
         <ul class="nav-links">
             <li><a href="#about">ノート</a></li>
-            <li><a href="#video">実験ログ</a></li>
-            <li><a href="#consulting">プロトコル</a></li>
+            <li><a href="#papers">論文</a></li>
+            <li><a href="#video">最近の発見</a></li>
+            <li><a href="#consulting">仕事の依頼</a></li>
             <li><a href="#contact">連絡</a></li>
         </ul>
         <button class="nav-hamburger" id="hamburger" aria-label="メニュー">
@@ -1270,8 +1325,9 @@
     <div class="mobile-overlay" id="mobileOverlay">
         <ul>
             <li><a href="#about" class="mobile-link">ノート</a></li>
-            <li><a href="#video" class="mobile-link">実験ログ</a></li>
-            <li><a href="#consulting" class="mobile-link">プロトコル</a></li>
+            <li><a href="#papers" class="mobile-link">論文</a></li>
+            <li><a href="#video" class="mobile-link">最近の発見</a></li>
+            <li><a href="#consulting" class="mobile-link">仕事の依頼</a></li>
             <li><a href="#contact" class="mobile-link">連絡</a></li>
             <span class="mobile-prompt">~/hasakan$ _</span>
         </ul>
@@ -1281,14 +1337,14 @@
     <section class="hero" id="hero">
         <canvas id="hero-canvas"></canvas>
         <div class="hero-content">
-            <p class="hero-label">AI Researcher — Nagoya University School of Informatics</p>
+            <p class="hero-label">AI Researcher | Self-Experimenter | AI Consultant</p>
             <div class="hero-title-wrap">
                 <h1 class="hero-title">
                     <span class="jp">ハサカン</span>
                     <span class="en-sm">Hasakan / Kanta Hasada</span>
                 </h1>
             </div>
-            <p class="hero-sub">AI 研究者<span class="highlight"> / </span>名古屋大学 情報学部</p>
+            <p class="hero-sub">AI 研究者<span class="highlight"> | </span>自分の体で実験する<span class="highlight"> | </span>AI コンサル</p>
             <p class="hero-tagline">
                 機械学習と <em>Claude</em> で、<br>
                 仕事も生活も自動で回している。
@@ -1319,7 +1375,7 @@
     <section class="section" id="about">
         <div class="section-label reveal">01 / 研究ノート — Research Note</div>
         <h2 class="section-title reveal reveal-d1">
-            名古屋大学で <span class="accent">AI</span> を研究。<br>
+            <span class="accent">AI</span> を研究。<br>
             日々の仕事と生活を<span class="accent-orange">自動化</span>する。
         </h2>
         <div class="about-grid">
@@ -1357,6 +1413,32 @@
         </div>
     </section>
 
+
+    <!-- Papers -->
+    <section class="section" id="papers">
+        <div class="section-label reveal">02 / 論文 — Papers</div>
+        <h2 class="section-title reveal reveal-d1">
+            研究の前に、まず<span class="accent">睡眠</span>。
+        </h2>
+        <p class="section-desc reveal reveal-d2">人生の3分の1は眠っている。その3分の1を、自分の体で実験して論文にしました。</p>
+        <article class="paper-card reveal reveal-d2">
+            <div class="paper-meta">
+                <span class="paper-tag">Paper No.1</span>
+                <span>2026-10-23</span>
+                <span>v1</span>
+                <span>Zenodo · CC BY 4.0</span>
+            </div>
+            <h3 class="paper-title">My Sleep Life Innovation: a self-experiment on improving the third of life we spend asleep</h3>
+            <p class="paper-jp">睡眠の人体実験。換気・照明を暗く・寝る前にスマホを見ない・夕食を早く、の4つを試し、ウェアラブルで約3か月(86夜)測りました。長くは効かなかったこと、寝る時刻が1時間遅いと睡眠スコアが3.4点下がることまで、うまくいかなかった所も含めて書いています。</p>
+            <p class="paper-next">次の版(v2)は 2027-01-01 まで。寝る前の習慣をもっと厳しくして試します。</p>
+            <div class="paper-links">
+                <a href="https://doi.org/10.5281/zenodo.23585090" target="_blank" rel="noopener">論文を読む(Zenodo) ↗</a>
+                <a href="https://github.com/kanta0410/my-sleep-life-innovation" target="_blank" rel="noopener">コード(GitHub) ↗</a>
+                <span class="paper-doi">DOI 10.5281/zenodo.23585090</span>
+            </div>
+        </article>
+    </section>
+
     <!-- Video Section -->
     <section class="video-section" id="video">
         <div class="video-inner">
@@ -1368,7 +1450,7 @@
                 </div>
                 <iframe
                     src="https://www.youtube.com/embed/h0HrmxWqxwc"
-                    title="Hasakan — 自信作"
+                    title="Hasakan — 最近の発見"
                     loading="lazy"
                     id="videoIframe"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1377,14 +1459,13 @@
             </div>
             <div class="video-info reveal reveal-d1">
                 <div class="video-log">
-                    <span><span class="log-dot"></span> 実験ログ 002</span>
+                    <span><span class="log-dot"></span> 03 / 最近の発見</span>
                     <span>YouTube Shorts</span>
                     <span>9:16</span>
                 </div>
-                <h3>いちばんの自信作。<br>まず1本見てください。</h3>
+                <h3>最近の発見。<br>まず1本見てください。</h3>
                 <p>
-                    研究や開発の合間に生まれた、とっておきの一本。
-                    YouTube ショートとして公開中。
+                    日々の実験で見つけたことを、YouTube ショートで出しています。
                 </p>
                 <span class="video-tag">▶ Shorts — 9:16</span>
             </div>
@@ -1395,7 +1476,7 @@
     <section class="section" id="consulting">
         <div class="consulting-header">
             <div>
-                <div class="section-label reveal">03 / 実験プロトコル — AI Consulting</div>
+                <div class="section-label reveal">04 / 仕事の依頼 — AI Consulting</div>
                 <h2 class="section-title reveal reveal-d1">
                     AI コンサル<span class="accent">。</span>
                 </h2>
@@ -1441,7 +1522,7 @@
     <!-- Contact -->
     <section class="contact-section" id="contact">
         <div class="contact-inner">
-            <div class="section-label reveal">04 / 連絡 — Contact</div>
+            <div class="section-label reveal">05 / 連絡 — Contact</div>
             <h2 class="section-title reveal reveal-d1">
                 相談の<span class="accent">予約</span>。
             </h2>
@@ -1474,8 +1555,9 @@
             </div>
             <ul class="footer-links">
                 <li><a href="#about">ノート</a></li>
-                <li><a href="#video">実験ログ</a></li>
-                <li><a href="#consulting">プロトコル</a></li>
+                <li><a href="#papers">論文</a></li>
+                <li><a href="#video">最近の発見</a></li>
+                <li><a href="#consulting">仕事の依頼</a></li>
                 <li><a href="#contact">連絡</a></li>
             </ul>
         </div>
@@ -1632,7 +1714,7 @@
                             ctx.beginPath();
                             ctx.moveTo(particles[i].x, particles[i].y);
                             ctx.lineTo(particles[j].x, particles[j].y);
-                            ctx.strokeStyle = `rgba(0, 224, 127, ${op})`;
+                            ctx.strokeStyle = `rgba(255, 59, 71, ${op})`;
                             ctx.lineWidth = 0.6;
                             ctx.stroke();
                         }
@@ -1647,8 +1729,8 @@
 
                     const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius * (1.8 + glow * 1.8));
                     grad.addColorStop(0, `rgba(255, 255, 255, ${0.5 + glow * 0.3})`);
-                    grad.addColorStop(0.45, `rgba(0, 224, 127, ${0.35 + glow * 0.25})`);
-                    grad.addColorStop(1, 'rgba(0, 224, 127, 0)');
+                    grad.addColorStop(0.45, `rgba(255, 59, 71, ${0.35 + glow * 0.25})`);
+                    grad.addColorStop(1, 'rgba(255, 59, 71, 0)');
                     ctx.beginPath();
                     ctx.arc(p.x, p.y, p.radius * (1.3 + glow * 1.3), 0, Math.PI * 2);
                     ctx.fillStyle = grad;

@@ -2,14 +2,14 @@
 
 ## 誰のサイトか
 - 名前: ハサカン(英字は Hasakan、小さく Kanta Hasada)。漢字のフルネームは出さない。
-- 肩書き: AI 研究者 / AI Researcher。名古屋大学 情報学部の学生。
+- 肩書き: AI 研究者 / AI Researcher。大学名は出さない。
 - 一言: 機械学習と Claude で、仕事も生活も自動で回している。
 
 ## リンク
 - GitHub: https://github.com/kanta0410
 - note: https://note.com/kanta_st0140
 - X: https://x.com/coco0140_st
-- YouTube: チャンネルでなく自信作の1本を埋め込む → https://www.youtube.com/shorts/h0HrmxWqxwc(埋め込みは https://www.youtube.com/embed/h0HrmxWqxwc 、縦長 9:16)
+- YouTube: 「最近の発見」として1本を埋め込む → https://www.youtube.com/shorts/h0HrmxWqxwc(埋め込みは https://www.youtube.com/embed/h0HrmxWqxwc 、縦長 9:16)
 - Instagram は載せない。
 
 ## AI コンサル(初回の相談は無料)
@@ -28,3 +28,10 @@
 - 風変わりで、徹底的に洗練されていて、かっこいい。テンプレっぽさを出さない。
 - 1枚の index.html(CSS と JS は中に書く)。外部は Google Fonts だけ。
 - スマホで崩れない。日本語が主、英語を少し添える。
+
+## 論文(研究の前に、まず睡眠)
+- My Sleep Life Innovation (v1)・2026-10-23・Zenodo・DOI 10.5281/zenodo.23585090・コード https://github.com/kanta0410/my-sleep-life-innovation
+- v2 は 2027-01-01 まで。
+
+## 色
+- 赤(#ff3b47)が主、琥珀(#ffb547)を添える。
