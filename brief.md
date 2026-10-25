@@ -1,14 +1,14 @@
 # サイトの中身(DeepSeek に渡す指示書)
 
 ## 誰のサイトか
-- 名前: Kanta Hasada(ハサカン)。漢字のフルネームは出さない。
+- 名前: ハサカン(英字は Hasakan、小さく Kanta Hasada)。漢字のフルネームは出さない。
 - 肩書き: AI 研究者 / AI Researcher。名古屋大学 情報学部の学生。
 - 一言: 機械学習と Claude で、仕事も生活も自動で回している。
 
 ## リンク
 - GitHub: https://github.com/kanta0410
 - note: https://note.com/kanta_st0140
-- X: https://x.com/coco0140_st (要確認)
+- X: https://x.com/coco0140_st
 - YouTube: チャンネルでなく自信作の1本を埋め込む → https://www.youtube.com/shorts/h0HrmxWqxwc(埋め込みは https://www.youtube.com/embed/h0HrmxWqxwc 、縦長 9:16)
 - Instagram は載せない。
 
