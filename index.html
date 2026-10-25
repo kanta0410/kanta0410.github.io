@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ハサカン / Hasakan — AI Researcher</title>
+    <title>ハサカン / Hasakan — AI Research</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -825,131 +825,7 @@
             color: var(--accent);
         }
 
-        /* Consulting */
-        .consulting-header {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-bottom: 3rem;
-        }
-        .consulting-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.6rem 1.25rem;
-            background: rgba(255, 59, 71, 0.08);
-            border: 1px solid rgba(255, 59, 71, 0.3);
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: var(--accent);
-            letter-spacing: 0.04em;
-            white-space: nowrap;
-        }
-        .consulting-badge .dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--accent);
-            animation: pulse-dot 1.5s ease-in-out infinite;
-            flex-shrink: 0;
-        }
-        @keyframes pulse-dot {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.4; transform: scale(0.7); }
-        }
-        .consulting-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.25rem;
-        }
-        .consulting-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-md);
-            padding: 2rem 1.75rem;
-            transition: all var(--transition);
-            position: relative;
-            overflow: hidden;
-            cursor: default;
-            display: flex;
-            flex-direction: column;
-            min-height: 180px;
-        }
-        .consulting-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent), transparent);
-            opacity: 0;
-            transition: opacity var(--transition);
-        }
-        .consulting-card::after {
-            content: attr(data-index);
-            position: absolute;
-            bottom: -0.5rem;
-            right: 0.5rem;
-            font-family: var(--font-display);
-            font-size: 5rem;
-            font-weight: 700;
-            color: rgba(255, 255, 255, 0.025);
-            pointer-events: none;
-            line-height: 1;
-        }
-        .consulting-card:hover {
-            border-color: var(--border-light);
-            transform: translateY(-5px);
-            box-shadow: 0 16px 50px rgba(0, 0, 0, 0.4);
-        }
-        .consulting-card:hover::before {
-            opacity: 1;
-        }
-        .consulting-card .card-index {
-            font-family: var(--font-mono);
-            font-size: 0.65rem;
-            letter-spacing: 0.1em;
-            color: var(--accent);
-            margin-bottom: 1rem;
-            word-break: break-word;
-        }
-        .consulting-card h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-            letter-spacing: 0.01em;
-            line-height: 1.5;
-            word-break: break-word;
-        }
-        .consulting-card p {
-            font-size: 0.82rem;
-            color: var(--text-secondary);
-            line-height: 1.8;
-            word-break: break-word;
-        }
-        .consulting-card .card-price {
-            display: inline-block;
-            margin-top: auto;
-            padding-top: 1rem;
-            font-family: var(--font-mono);
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            letter-spacing: 0.06em;
-        }
-        .consulting-card.featured {
-            grid-column: span 2;
-            background: linear-gradient(135deg, rgba(255, 59, 71, 0.06) 0%, transparent 50%), var(--bg-card);
-            border-color: rgba(255, 59, 71, 0.2);
-        }
-        .consulting-card.featured h4 {
-            font-size: 1.25rem;
-        }
-
-        /* Contact / Booking */
+        /* Contact */
         .contact-section {
             background: var(--bg-surface);
             border-top: 1px solid var(--border);
@@ -958,56 +834,6 @@
         .contact-inner {
             max-width: 1100px;
             margin: 0 auto;
-        }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-        .booking-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-md);
-            padding: 2.5rem 2rem;
-            text-align: center;
-            transition: all var(--transition);
-        }
-        .booking-card:hover {
-            border-color: var(--border-light);
-        }
-        .booking-card .btn-book {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 1rem 2.5rem;
-            background: var(--accent);
-            color: #fff;
-            font-weight: 700;
-            font-size: 0.9rem;
-            letter-spacing: 0.04em;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: all var(--transition);
-            box-shadow: 0 4px 20px rgba(255, 59, 71, 0.3);
-            white-space: nowrap;
-        }
-        .booking-card .btn-book:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(255, 59, 71, 0.45);
-            background: #ff5560;
-        }
-        .booking-card .btn-book:active {
-            transform: translateY(0);
-        }
-        .schedule-list {
-            margin-top: 1.5rem;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            line-height: 2;
-        }
-        .schedule-list strong {
-            color: var(--text-primary);
-            font-weight: 600;
         }
         .contact-email {
             display: flex;
@@ -1019,6 +845,8 @@
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: var(--radius-md);
+            max-width: 500px;
+            margin: 2rem auto 0;
         }
         .contact-email .email-label {
             font-family: var(--font-mono);
@@ -1039,11 +867,6 @@
         }
         .contact-email a:hover {
             color: var(--accent);
-        }
-        .contact-email .email-note {
-            margin-top: 1rem;
-            font-size: 0.75rem;
-            color: var(--text-muted);
         }
 
         /* SNS section */
@@ -1225,13 +1048,6 @@
             .video-frame-wrapper {
                 max-width: 300px;
             }
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            .consulting-card.featured {
-                grid-column: span 1;
-            }
         }
         @media (max-width: 768px) {
             .nav-links {
@@ -1250,9 +1066,6 @@
             .hero-title {
                 font-size: clamp(2.8rem, 11vw, 4rem);
             }
-            .consulting-grid {
-                grid-template-columns: 1fr;
-            }
             .sns-grid {
                 grid-template-columns: 1fr;
             }
@@ -1266,10 +1079,6 @@
             }
             .paper-title {
                 font-size: 1.2rem;
-            }
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
             }
             .nav {
                 padding: 0 1rem;
@@ -1298,10 +1107,6 @@
             }
             .section-title {
                 font-size: 1.6rem;
-            }
-            .booking-card,
-            .contact-email {
-                padding: 1.75rem 1.25rem;
             }
             .paper-card {
                 padding: 1.75rem 1rem;
@@ -1355,16 +1160,8 @@
             .video-actions {
                 gap: 0.8rem;
             }
-            .consulting-badge {
-                font-size: 0.65rem;
-                padding: 0.5rem 0.85rem;
-            }
-            .consulting-card {
-                padding: 1.5rem 1.25rem;
-                min-height: auto;
-            }
-            .consulting-card.featured h4 {
-                font-size: 1.05rem;
+            .contact-email {
+                padding: 1.75rem 1.25rem;
             }
             .contact-email a {
                 font-size: 0.95rem;
@@ -1395,7 +1192,6 @@
             <li><a href="#career">経歴</a></li>
             <li><a href="#paper">論文</a></li>
             <li><a href="#video">最近の事件</a></li>
-            <li><a href="#consulting">仕事の依頼</a></li>
             <li><a href="#contact">連絡</a></li>
         </ul>
         <button class="nav-hamburger" id="hamburger" aria-label="Menu">
@@ -1408,7 +1204,6 @@
             <li><a href="#career" class="mobile-link">経歴</a></li>
             <li><a href="#paper" class="mobile-link">論文</a></li>
             <li><a href="#video" class="mobile-link">最近の事件</a></li>
-            <li><a href="#consulting" class="mobile-link">仕事の依頼</a></li>
             <li><a href="#contact" class="mobile-link">連絡</a></li>
         </ul>
     </div>
@@ -1416,12 +1211,12 @@
     <section class="hero" id="hero">
         <canvas id="particle-canvas"></canvas>
         <div class="hero-content">
-            <p class="hero-label">AI Researcher | Self-Experimenter | AI Consultant</p>
+            <p class="hero-label">Hobby: AI Research | Self-Experimenter</p>
             <h1 class="hero-title">ハサカン</h1>
             <p class="hero-sub">
                 <span class="en-name">Hasakan</span> / Kanta Hasada
                 <br>
-                <span style="font-size:0.75em; color:var(--text-muted);">AI 研究者 | 自分の体で実験する | AI コンサル</span>
+                <span style="font-size:0.75em; color:var(--text-muted);">趣味で AI 研究 | 自分の体で実験する</span>
             </p>
             <p class="hero-tagline">
                 機械学習と <em>Claude</em> で、<br>
@@ -1436,17 +1231,15 @@
 
     <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
-            <span>AI Researcher</span>
+            <span>AI Research</span>
             <span>Machine Learning</span>
             <span>Claude</span>
             <span>Deep Learning</span>
-            <span>AI Consulting</span>
             <span>Self-Experimenter</span>
-            <span>AI Researcher</span>
+            <span>AI Research</span>
             <span>Machine Learning</span>
             <span>Claude</span>
             <span>Deep Learning</span>
-            <span>AI Consulting</span>
             <span>Self-Experimenter</span>
         </div>
     </div>
@@ -1491,10 +1284,6 @@
             <div class="timeline-item">
                 <div class="timeline-date">2026-10-23</div>
                 <div class="timeline-text"><strong>論文1号「My Sleep Life Innovation」</strong>を公開（睡眠の人体実験）</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2026-10</div>
-                <div class="timeline-text"><strong>AI コンサル</strong>を始める</div>
             </div>
         </div>
     </section>
@@ -1554,68 +1343,15 @@
         </div>
     </section>
 
-    <section class="section" id="consulting">
-        <div class="consulting-header">
-            <div>
-                <div class="section-label reveal">04 / Work</div>
-                <h2 class="section-title reveal reveal-delay-1">
-                    仕事の依頼<span class="accent">。</span>
-                </h2>
-            </div>
-            <div class="consulting-badge reveal reveal-delay-2">
-                <span class="dot"></span> 初回の相談は無料
-            </div>
-        </div>
-        <div class="consulting-grid">
-            <div class="consulting-card featured reveal reveal-delay-1" data-index="01">
-                <div class="card-index">01 / Lecture &amp; Seminar</div>
-                <h4>講演・勉強会</h4>
-                <p>機械学習・深層学習・AI。</p>
-                <span class="card-price">1講座 5万〜10万円</span>
-            </div>
-            <div class="consulting-card reveal reveal-delay-2" data-index="02">
-                <div class="card-index">02 / AI Implementation</div>
-                <h4>AI の導入支援</h4>
-            </div>
-            <div class="consulting-card reveal reveal-delay-3" data-index="03">
-                <div class="card-index">03 / Knowledge Base</div>
-                <h4>ナレッジベースの作成</h4>
-                <p>社内の資料を AI で引けるようにする。</p>
-            </div>
-            <div class="consulting-card reveal reveal-delay-1" data-index="04">
-                <div class="card-index">04 / Semiconductor AI</div>
-                <h4>半導体・回路設計の AI のお手伝い</h4>
-            </div>
-            <div class="consulting-card reveal reveal-delay-2" data-index="05">
-                <div class="card-index">05 / Long-term Support</div>
-                <h4>中小企業の AI 導入と、長期のサポート</h4>
-            </div>
-        </div>
-    </section>
-
     <section class="contact-section" id="contact">
         <div class="contact-inner">
-            <div class="section-label reveal">05 / Contact</div>
+            <div class="section-label reveal">04 / Contact</div>
             <h2 class="section-title reveal reveal-delay-1">
-                相談の<span class="accent">予約</span>。
+                連絡<span class="accent">。</span>
             </h2>
-            <div class="contact-grid">
-                <div class="booking-card reveal reveal-delay-1">
-                    <h3 style="font-size:1.2rem; font-weight:600; margin-bottom:0.25rem;">TimeRex でかんたん予約</h3>
-                    <p style="font-size:0.82rem; color:var(--text-muted);">下のボタンからご希望の日時を選択してください。</p>
-                    <a href="mailto:kanta737564@gmail.com?subject=AI%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%20%E5%88%9D%E5%9B%9E%E7%9B%B8%E8%AB%87" data-timerex="TODO" class="btn-book">
-                        予約する →
-                    </a>
-                    <div class="schedule-list">
-                        <strong>対応可能時間</strong><br>
-                        土・日・水・金 13:00〜17:00
-                    </div>
-                </div>
-                <div class="contact-email reveal reveal-delay-2">
-                    <p class="email-label">お問い合わせはこちら</p>
-                    <a href="mailto:kanta737564@gmail.com">kanta737564@gmail.com</a>
-                    <p class="email-note">件名に「AI コンサル相談」とご記入ください。</p>
-                </div>
+            <div class="contact-email reveal reveal-delay-2">
+                <p class="email-label">お問い合わせはこちら</p>
+                <a href="mailto:kanta737564@gmail.com">kanta737564@gmail.com</a>
             </div>
         </div>
     </section>
@@ -1664,12 +1400,11 @@
                 <li><a href="#career">経歴</a></li>
                 <li><a href="#paper">論文</a></li>
                 <li><a href="#video">最近の事件</a></li>
-                <li><a href="#consulting">仕事の依頼</a></li>
                 <li><a href="#contact">連絡</a></li>
             </ul>
         </div>
         <div class="footer-copy">
-            &copy; 2026 Hasakan — AI Researcher
+            &copy; 2026 Hasakan — AI Research
         </div>
     </footer>
 
@@ -1865,7 +1600,7 @@
             revealElements.forEach(el => observer.observe(el));
 
             if (window.innerWidth >= 768) {
-                const tiltCards = document.querySelectorAll('.consulting-card, .sns-card, .booking-card, .contact-email');
+                const tiltCards = document.querySelectorAll('.sns-card, .contact-email');
                 tiltCards.forEach(card => {
                     card.addEventListener('mousemove', (e) => {
                         const rect = card.getBoundingClientRect();
